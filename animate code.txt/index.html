@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation</title>
+  <style>
+    .animated-box {
+      width: 100px;
+      height: 100px;
+      background-color: royalblue;
+      position: relative;
+      animation: animateBox 5s ease-in-out infinite;
+    }
+
+    @keyframes animateBox {
+      0% {
+        background-color: royalblue;
+        width: 100px;
+        height: 100px;
+        left: 0;
+        top: 0;
+      }
+      25% {
+        background-color: green;
+        width: 120px;
+        height: 120px;
+        left: 150px;
+        top: 50px;
+      }
+      50% {
+        background-color: orange;
+        width: 140px;
+        height: 140px;
+        left: 300px;
+        top: 100px;
+      }
+      75% {
+        background-color: red;
+        width: 120px;
+        height: 120px;
+        left: 150px;
+        top: 150px;
+      }
+      100% {
+        background-color: royalblue;
+        width: 100px;
+        height: 100px;
+        left: 0;
+        top: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="animated-box"></div>
+</body>
+</html>
+ 
